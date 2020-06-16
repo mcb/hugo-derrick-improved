@@ -1,5 +1,6 @@
 baseURL = "https://example.org"
-title = "Derrick"
+title = "Derrick Wells – Independent Product Designer"
+description = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
 theme = "hugo-derrick"
 themesDir = "../.."
 languageCode = "en-us"
