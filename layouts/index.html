@@ -17,7 +17,8 @@
 </div>
 
 <div class="container">
-  {{ range .Site.RegularPages }}
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range (.Paginate $pages).Pages }}
     <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
       {{ if .Params.image }}
       <div class="article__image-box">
