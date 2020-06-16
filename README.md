@@ -42,7 +42,7 @@ Table of Contents
 
 Check the theme in action [Demo](https://derrick-jekyll.netlify.com)
 
-![Main page preview](https://github.com/artemsheludko/derrick/blob/master/assets/img/derrick-preview.jpg?raw=true)
+![Main page preview](https://github.com/mcb/hugo-derrick/blob/master/exampleSite/static/img/derrick-preview.jpg?raw=true)
 
 * * *
 
