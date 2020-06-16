@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8">
+
+  <!-- mobile responsive meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{ $title_plain := .Title | markdownify | plainify }}
+  <title>{{ $title_plain }}</title>
+
+  {{ $description_plain := default .Site.Params.defaultDescription .Description | markdownify | plainify }}
+  <meta name="description" content="{{ $description_plain }}">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ with .Site.Home.OutputFormats.Get "RSS" -}}
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
+  {{ end  }}
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+</head>

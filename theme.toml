@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Hugo Derrick"
+license = "MIT"
+licenselink = "https://github.com/mcb/hugo-derrick/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/mcb/hugo-derrick"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Michael C. Beck"
+  homepage = "https://zeroeight.net"
+
+# If porting an existing theme
+[original]
+  name = "Derrick"
+  homepage = "https://github.com/artemsheludko/derrick"
+  repo = "artemsheludko/derrick"

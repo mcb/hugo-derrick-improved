@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+
+    
+    <body>
+        {{ template "_internal/google_analytics.html" . }}
+
+        {{- partial "header.html" . -}}
+        
+        <!-- begin content -->
+        <div id="content" aria-label="Content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        <!-- end content -->
+
+        {{- partial "footer.html" . -}}
+
+        <!-- begin js -->
+        <script src="{{ "js/jquery-3.3.1.min.js" | relURL }}"></script>
+        <script src="{{ "js/vendors/aos.js" | relURL }}"></script>
+        <script src="{{ "js/vendors/vendors/jquery.fitvids.js" | relURL }}"></script>
+        <script src="{{ "js/common.js" | relURL }}"></script>
+        <!-- end js -->
+    </body>
+</html>
