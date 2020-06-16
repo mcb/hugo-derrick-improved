@@ -1,6 +1,6 @@
 ---
 title: About
-image: '/assets/img/01.jpg'
+image: '/img/01.jpg'
 menu:
   main:
     weight: 10
