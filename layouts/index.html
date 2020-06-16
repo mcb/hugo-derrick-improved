@@ -29,7 +29,7 @@
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
         <div class="article__meta">
-          <span class="article__date">Published <time datetime="{{ .Params.date }}">{{ .PublishDate.Format "January 2, 2006"}}</time></span>
+          <span class="article__date">Published <time datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006"}}</time></span>
         </div>
         <p class="article__excerpt">{{ .Summary }}</p>
         <a href="{{ .Permalink }}" class="read-more">Read the rest</a>

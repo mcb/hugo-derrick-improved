@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="container">
+
+  <section class="tag">
+
+    <div class="tag__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+      <h1 class="tag__title">{{ .Title }}</h1>
+    </div>
+
+    {{ range .Data.Pages }}
+    <!-- begin article -->
+    <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+      {{ if .Params.image }}
+      <div class="article__image-box">
+        <a href="{{.RelPermalink}}" class="article__image" style="background-image: url({{ .Params.image | relURL }})"></a>
+      </div>
+      {{ end }}
+      <div class="article__content">
+        <h2 class="article__title">
+          <a href="{{.RelPermalink}}">{{ .Title}}</a>
+        </h2>
+        <div class="article__meta">
+          <span class="article__date">Published <time datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time></span>
+        </div>
+        <p class="article__excerpt">{{ .Summary }}</p>
+        <a href="{{.RelPermalink}}" class="read-more">Read the rest</a>
+      </div>
+    </div>
+    <!-- end article -->
+    {{ end }}
+  </section>
+
+</div>
+{{ end }}
