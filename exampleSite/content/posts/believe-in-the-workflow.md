@@ -1,8 +1,8 @@
 ---
-title:  Travel Essentials
-date:   2019-07-24 14:01:35 +0300
-image:  '/assets/img/06.jpg'
-tags:   travel
+title:  Believe in the workflow
+date:   2019-07-24 15:01:35 +0300
+image:  '/img/02.jpg'
+tags:   [switzerland, heels, chair, blog]
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
@@ -36,7 +36,7 @@ Proactively envisioned multimedia based expertise and cross-media growth strateg
 
 Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
 
-![](/assets/img/05.jpg)
+![](/img/05.jpg)
 
 Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data.
 

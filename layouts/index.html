@@ -1,3 +1,41 @@
 {{ define "main" }}
 
+<div class="container">
+  <!-- begin author -->
+  <section class="author" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+    <div class="author__inner">
+  <img src="{{ .Site.Params.author.image | relURL }}" alt="{{ .Site.Params.author.name}}" class="author__img">
+      <h1 class="author__job">{{ .Site.Params.author.job }}</h1>
+      <p class="author__bio">{{ .Site.Params.author.bio }}</p>
+      <div class="author__more">
+        <a href="mailto:{{.Site.Params.author.email}}?subject=Hello%20%F0%9F%91%8B" class="say-hello">Say hello</a>
+        <a href="{{ "/about" | relURL }}" class="know-more">Know More</a>
+      </div>
+    </div>
+  </section>
+  <!-- end author -->
+</div>
+
+<div class="container">
+  {{ range .Site.RegularPages }}
+    <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+      {{ if .Params.image }}
+      <div class="article__image-box">
+        <a href="{{ .Permalink }}" class="article__image" style="background-image: url({{ .Params.image | relURL }})"></a>
+      </div>
+      {{ end }}
+      <div class="article__content">
+        <h2 class="article__title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <div class="article__meta">
+          <span class="article__date">Published <time datetime="{{ .Params.date }}">{{ .PublishDate.Format "January 2, 2006"}}</time></span>
+        </div>
+        <p class="article__excerpt">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="read-more">Read the rest</a>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
 {{ end }}

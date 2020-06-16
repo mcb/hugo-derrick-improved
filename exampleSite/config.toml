@@ -1,5 +1,8 @@
 baseURL = "https://example.org"
 title = "Derrick Wells – Independent Product Designer"
+logo = ""
+
+
 description = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
 theme = "hugo-derrick"
 themesDir = "../.."
@@ -17,12 +20,13 @@ paginate = 10
 [permalinks]
   post = "/:year/:month/:day/:slug"
 
-[params]
-  author = "Derrick Wells"
+[params.author]
+  name = "Derrick Wells"
+  image = "img/01.jpg"
   job = "Independent Product Designer"
   bio = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
   email = "forexample@website.com"
-  logo = ""
+  
 
 [[menu.footer]]
   weight = 1
