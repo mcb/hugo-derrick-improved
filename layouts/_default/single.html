@@ -84,9 +84,7 @@
     {{ end }}
   </div>
 
-   
-
-    {{ if .Site.DisqusShortname }}
+    {{ if .Site.DisqusShortname | and (not .Params.disableComments) }}
     <div id="comments">
         {{ template "_internal/disqus.html" . }}
     </div>
