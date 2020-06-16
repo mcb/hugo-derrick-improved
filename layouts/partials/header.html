@@ -1,0 +1,37 @@
+<div class="container-full">
+  <!-- begin header -->
+  <header class="header">
+
+    <div class="logo">
+      <a class="logo__link" href="{{ .Site.Home.RelPermalink }}">
+      {{ if .Site.Params.logo }}
+        <img class="logo__image" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }}">
+      {{ else }}
+        {{ .Site.Params.author }}
+      {{ end }}
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <span class="main-nav__open">menu</span>
+
+      <div class="main-nav__box">
+        <span class="main-nav__close">Close</span>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="{{ .Site.Home.RelPermalink }}" class="nav__link">Home</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          <li class="nav__item"><a href="{{ .URL }}" class="nav__link">{{ .Name }}</a></li>
+          
+          {{ end  }}
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- end header -->
+</div>

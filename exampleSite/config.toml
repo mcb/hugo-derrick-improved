@@ -22,6 +22,7 @@ paginate = 10
   job = "Independent Product Designer"
   bio = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
   email = "forexample@website.com"
+  logo = ""
 
 [[menu.footer]]
   weight = 1
