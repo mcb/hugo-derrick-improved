@@ -12,9 +12,11 @@
   <meta name="description" content="{{ $description_plain }}">
 
   <link rel="canonical" href="{{ .Permalink }}">
-  {{ with .Site.Home.OutputFormats.Get "RSS" -}}
-  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
-  {{ end  }}
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  <link rel="icon" href="{{ "favicon.ico" | absURL }}">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
