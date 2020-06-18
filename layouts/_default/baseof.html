@@ -17,17 +17,8 @@
         {{- partial "footer.html" . -}}
 
         <!-- begin js -->
-        {{ $js := resources.Get "js/vendors/jquery-3.3.1.min.js" | fingerprint "sha512" }}
-        <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
-
-        {{ $aos := resources.Get "js/vendors/aos.js" | fingerprint "sha512" }}
-        <script src="{{ $aos.RelPermalink }}" integrity="{{ $aos.Data.Integrity }}"></script>
-
-        {{ $fitvids := resources.Get "js/vendors/jquery.fitvids.js" | fingerprint "sha512" }}
-        <script src="{{ $fitvids.RelPermalink }}" integrity="{{ $fitvids.Data.Integrity }}"></script>
-
-        {{ $common := resources.Get "js/common.js" | fingerprint "sha512" }}
-        <script src="{{ $common.RelPermalink }}" integrity="{{ $common.Data.Integrity }}"></script>
+        
+        {{- partial "scripts.html" . -}}
 
         <!-- end js -->
     </body>
