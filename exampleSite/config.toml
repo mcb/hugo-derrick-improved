@@ -20,7 +20,7 @@ paginate = 10
 [permalinks]
   posts = "/:year/:month/:day/:slug"
 
-[params.author]
+[author]
   name = "Derrick Wells"
   image = "img/01.jpg"
   job = "Independent Product Designer"

@@ -7,7 +7,7 @@
       {{ if .Site.Params.logo }}
         <img class="logo__image" src="{{ .Site.logo | relURL }}" alt="{{ .Title }}">
       {{ else }}
-        {{ .Site.Params.author.name }}
+        {{ .Site.Author.name }}
       {{ end }}
       </a>
     </div>

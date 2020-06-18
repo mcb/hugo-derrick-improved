@@ -4,11 +4,11 @@
   <!-- begin author -->
   <section class="author" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
     <div class="author__inner">
-  <img src="{{ .Site.Params.author.image | relURL }}" alt="{{ .Site.Params.author.name}}" class="author__img">
-      <h1 class="author__job">{{ .Site.Params.author.job }}</h1>
-      <p class="author__bio">{{ .Site.Params.author.bio }}</p>
+  <img src="{{ .Site.Author.image | relURL }}" alt="{{ .Site.Author.name}}" class="author__img">
+      <h1 class="author__job">{{ .Site.Author.job }}</h1>
+      <p class="author__bio">{{ .Site.Author.bio }}</p>
       <div class="author__more">
-        <a href="mailto:{{.Site.Params.author.email}}?subject=Hello%20%F0%9F%91%8B" class="say-hello">Say hello</a>
+        <a href="mailto:{{.Site.Author.email}}?subject=Hello%20%F0%9F%91%8B" class="say-hello">Say hello</a>
         <a href="{{ "/about" | relURL }}" class="know-more">Know More</a>
       </div>
     </div>
