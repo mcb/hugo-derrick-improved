@@ -8,7 +8,7 @@
   {{ $title_plain := .Title | markdownify | plainify }}
   <title>{{ $title_plain }}</title>
 
-  {{ $description_plain := default .Site.Params.defaultDescription .Description | markdownify | plainify }}
+  {{ $description_plain := default .Site.Params.description .Description | markdownify | plainify }}
   <meta name="description" content="{{ $description_plain }}">
 
   <link rel="canonical" href="{{ .Permalink }}">

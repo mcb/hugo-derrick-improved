@@ -5,7 +5,7 @@
     <div class="logo">
       <a class="logo__link" href="{{ .Site.Home.RelPermalink }}">
       {{ if .Site.Params.logo }}
-        <img class="logo__image" src="{{ .Site.logo | relURL }}" alt="{{ .Title }}">
+        <img class="logo__image" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }}">
       {{ else }}
         {{ .Site.Author.name }}
       {{ end }}

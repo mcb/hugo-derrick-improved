@@ -1,9 +1,5 @@
 baseURL = "https://example.org"
-title = "Derrick Wells – Independent Product Designer"
-logo = ""
 
-
-description = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
 theme = "hugo-derrick"
 themesDir = "../.."
 languageCode = "en-us"
@@ -16,6 +12,11 @@ googleAnalytics = ""
 
 # Define the number of posts per page
 paginate = 10
+
+[params]
+  description = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
+  title = "Derrick Wells – Independent Product Designer"
+  logo = ""
 
 [permalinks]
   posts = "/:year/:month/:day/:slug"
