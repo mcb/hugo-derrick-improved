@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{ $title_plain := .Title | markdownify | plainify }}
-  <title>{{ $title_plain }}</title>
+  <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
   {{ $description_plain := default .Site.Params.description .Description | markdownify | plainify }}
   <meta name="description" content="{{ $description_plain }}">
