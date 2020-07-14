@@ -1,11 +1,9 @@
-$(document).ready(function() {
-  'use strict';
+document.addEventListener("DOMContentLoaded", function(event) { 
 
-  var headerOverlay = $('.header__overlay'),
-    menuList = $('.main-nav__box'),
-    menuOpenIcon = $('.main-nav__open'),
-    menuCloseIcon = $('.main-nav__close');
-
+  var headerOverlay = document.querySelectorAll('.header__overlay'),
+  menuList = document.querySelectorAll('.main-nav__box'),
+  menuOpenIcon = document.querySelectorAll('.main-nav__open'),
+  menuCloseIcon = document.querySelectorAll('.main-nav__close');
 
   /* =======================
   // Menu and Navigation
@@ -20,18 +18,19 @@ $(document).ready(function() {
 
   headerOverlay.click(function () {
     menuClose();
-    searchClose();
+    // searchClose(); // this was never defined in the original theme?
   });
 
   function menuOpen() {
-    menuList.addClass('visible');
-    headerOverlay.addClass('visible');
+    menuList.classList.add('visible');
+    headerOverlay.classList.add('visible');
   }
 
   function menuClose() {
-    menuList.removeClass('visible');
-    headerOverlay.removeClass('visible');
+    menuList.classList.remove('visible');
+    headerOverlay.classList.remove('visible');
   }
+
 
 
   /* ================================
@@ -43,9 +42,9 @@ $(document).ready(function() {
   /* =======================
   // Responsive Videos
   ======================= */
-  $(".post__content, .page__content").fitVids({
-    customSelector: ['iframe[src*="ted.com"]']
-  });
 
+  fitvids('.post__content, .page__content', {
+    players: ['iframe[src*="ted.com"]']
+  })
 
 });
