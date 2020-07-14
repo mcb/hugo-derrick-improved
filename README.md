@@ -47,6 +47,7 @@ List of changes to the original ([hugo-ported](https://github.com/mcb/hugo-derri
 * Fixed issue with lists that were displayed in smaller font due to selector issue
 * Changed background-image to `contain` as this would require to always have a matching size
 * Cleanup of old references to unused elements
+* Added Opengraph and Twitter Cards
 
 
 * * *
