@@ -7,6 +7,7 @@ Derrick is a clean minimal and fast theme for a personal blog based on the Derri
 Table of Contents
 -----------------
 *   [Features](#features)
+*   [Changes](#changes)
 *   [Demo](#demo)
 *   [Deployment](#deployment)
 *   [Posts](#posts)
@@ -34,6 +35,17 @@ Table of Contents
 * Supports Google Analytics
 
 * Google Fonts
+
+
+* * *
+
+### Changes
+
+List of changes to the original (hugo-ported) theme:
+
+* Removed jQuery as it was only used for the simplest of tasks and had some JS errors as well as an outdated library
+* Fixed issue with lists that were displayed in smaller font due to selector issue
+* Fixed background-image to `contain` as this would require to always have a matching size
 
 
 * * *
