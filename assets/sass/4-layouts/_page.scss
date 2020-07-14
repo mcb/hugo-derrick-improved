@@ -20,7 +20,7 @@
 
 .page-image {
   margin-bottom: 45px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: $gray-white;
@@ -33,7 +33,7 @@
 
 .page__content {
   margin-bottom: 45px;
-  p {
+  p, ul li {
     font-size: 18px;
     line-height: 32px;
     color: $gray;
