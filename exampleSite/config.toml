@@ -17,6 +17,7 @@ paginate = 10
   description = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
   title = "Derrick Wells – Independent Product Designer"
   logo = ""
+  mainSections = ["posts"]
 
 [permalinks]
   posts = "/:year/:month/:day/:slug"
@@ -28,7 +29,6 @@ paginate = 10
   bio = "Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love."
   email = "forexample@website.com"
   
-
 [[menu.footer]]
   weight = 1
   name = "Twitter"
