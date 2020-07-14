@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-  var headerOverlay = document.querySelectorAll('.header__overlay'),
-  menuList = document.querySelectorAll('.main-nav__box'),
-  menuOpenIcon = document.querySelectorAll('.main-nav__open'),
-  menuCloseIcon = document.querySelectorAll('.main-nav__close');
+  var menuList = document.querySelector('.main-nav__box'),
+  menuOpenIcon = document.querySelector('.main-nav__open'),
+  menuCloseIcon = document.querySelector('.main-nav__close');
 
   /* =======================
   // Menu and Navigation
@@ -16,19 +15,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     menuClose();
   }
 
-  headerOverlay.onclick = function () {
-    menuClose();
-    // searchClose(); // this was never defined in the original theme?
-  }
-
   function menuOpen() {
-    menuList.classList.add('visible');
-    headerOverlay.classList.add('visible');
+    menuList.classList.add('visible'); 
   }
 
   function menuClose() {
     menuList.classList.remove('visible');
-    headerOverlay.classList.remove('visible');
   }
 
 

@@ -41,11 +41,12 @@ Table of Contents
 
 ### Changes
 
-List of changes to the original (hugo-ported) theme:
+List of changes to the original ([hugo-ported](https://github.com/mcb/hugo-derrick)) theme:
 
 * Removed jQuery as it was only used for the simplest of tasks and had some JS errors as well as an outdated library
 * Fixed issue with lists that were displayed in smaller font due to selector issue
-* Fixed background-image to `contain` as this would require to always have a matching size
+* Changed background-image to `contain` as this would require to always have a matching size
+* Cleanup of old references to unused elements
 
 
 * * *
