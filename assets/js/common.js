@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   /* =======================
   // Menu and Navigation
   ======================= */
-  menuOpenIcon.click(function() {
+  menuOpenIcon.onclick = function() {
     menuOpen();
-  })
+  }
 
-  menuCloseIcon.click(function () {
+  menuCloseIcon.onclick = function () {
     menuClose();
-  })
+  }
 
-  headerOverlay.click(function () {
+  headerOverlay.onclick = function () {
     menuClose();
     // searchClose(); // this was never defined in the original theme?
-  });
+  }
 
   function menuOpen() {
     menuList.classList.add('visible');
