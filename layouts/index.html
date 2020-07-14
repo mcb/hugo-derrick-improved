@@ -8,7 +8,7 @@
       <h1 class="author__job">{{ .Site.Author.job }}</h1>
       <p class="author__bio">{{ .Site.Author.bio }}</p>
       <div class="author__more">
-        <a href="mailto:{{.Site.Author.email}}?subject=Hello%20%F0%9F%91%8B" class="say-hello">Say hello</a>
+        {{ with .Site.Author.email }}<a href="mailto:{{.}}?subject=Hello%20%F0%9F%91%8B" class="say-hello">Say hello</a> {{ end }}
         <a href="{{ "/about" | relURL }}" class="know-more">Know More</a>
       </div>
     </div>
